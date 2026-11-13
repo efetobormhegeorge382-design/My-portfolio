@@ -210,7 +210,18 @@ main img {
   }
 }
 
-
+/* FORCE DP TO STOP SCATTERING */
+main img {
+  display: block !important;
+  float: none !important;
+  position: static !important;
+  width: 250px !important;
+  max-width: 85% !important;
+  height: auto !important;
+  border-radius: 20px !important;
+  margin: 20px auto !important;
+  clear: both !important;
+}
 
 
 
