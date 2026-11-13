@@ -81,7 +81,134 @@ p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  background: #f5efe6;
+  color: #111;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+/* TOP NAME */
+body > h1 {
+  background: #111;
+  color: white;
+  padding: 18px 10px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* NAV - This will balance on phone */
+.navbar {
+  background: #111;
+  padding: 10px 5px 18px 5px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  background: #222;
+  padding: 8px 14px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+/* MAIN CONTENT - Centered and balanced */
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 18px;
+}
+
+main h1 {
+  font-size: 42px;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+main h2 {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 10px 0;
+  color: #333;
+}
+
+main h2 strong {
+  font-size: 20px;
+  color: #000;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp-btn {
+  display: inline-block;
+  background: #111;
+  color: white !important;
+  text-decoration: none;
+  padding: 14px 26px;
+  border-radius: 30px;
+  font-weight: bold;
+  margin: 18px 0;
+  font-size: 16px;
+}
+
+/* YOUR PICTURE */
+main img {
+  width: 250px;
+  max-width: 85%;
+  height: auto;
+  border-radius: 20px;
+  margin: 15px auto;
+  display: block;
+}
+
+/* WHY SECTION */
+.why {
+  background: white;
+  padding: 25px 15px;
+  border-radius: 15px;
+  margin-top: 25px;
+}
+
+.why h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.why-box p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* EXTRA FIX FOR SMALL PHONES */
+@media (max-width: 400px) {
+  main h1 {
+    font-size: 34px;
+  }
+  main h2 {
+    font-size: 16px;
+  }
+  .navbar ul li a {
+    font-size: 13px;
+    padding: 7px 11px;
+  }
+}
 
 
 
